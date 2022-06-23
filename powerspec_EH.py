@@ -97,7 +97,7 @@ class powerspec:
     def D(self, z):
         Omegak = 1.0-self.Omegam-self.OmegaL
         Omegaz = self.Omegam*(1.0+z)**3.0/(self.OmegaL+Omegak*(1.0+z)**2.0+self.Omegam*(1.0+z)**3.0)
-        OmegaLz = self.OmegaL/(self.OmegaL+Omegak**(1.0+z)**2.0+self.Omegam*(1.0+z)**3.0)
+        OmegaLz = self.OmegaL/(self.OmegaL+Omegak*(1.0+z)**2.0+self.Omegam*(1.0+z)**3.0)
         D1_z = (1.0+z)**(-1.0)*5.0*Omegaz/2.0*(Omegaz**(4.0/7.0)-OmegaLz+(1.0+Omegaz/2.0)*(1.0+OmegaLz/70.0))**(-1.0)
         D1_0 = 5.0*self.Omegam/2.0*(self.Omegam**(4.0/7.0)-self.OmegaL+(1.0+self.Omegam/2.0)*(1.0+self.OmegaL/70.0))**(-1.0)
         return D1_z/D1_0
@@ -105,7 +105,7 @@ class powerspec:
     def D_nonnorm(self, z):
         Omegak = 1.0-self.Omegam-self.OmegaL
         Omegaz = self.Omegam*(1.0+z)**3.0/(self.OmegaL+Omegak*(1.0+z)**2.0+self.Omegam*(1.0+z)**3.0)
-        OmegaLz = self.OmegaL/(self.OmegaL+Omegak**(1.0+z)**2.0+self.Omegam*(1.0+z)**3.0)
+        OmegaLz = self.OmegaL/(self.OmegaL+Omegak*(1.0+z)**2.0+self.Omegam*(1.0+z)**3.0)
         D1_z = (1.0+z)**(-1.0)*5.0*Omegaz/2.0*(Omegaz**(4.0/7.0)-OmegaLz+(1.0+Omegaz/2.0)*(1.0+OmegaLz/70.0))**(-1.0)
         return D1_z
     
@@ -288,7 +288,7 @@ class powerspecNL:
     def D(self, z):
         Omegak = 1.0-self.Omegam-self.OmegaL
         Omegaz = self.Omegam*(1.0+z)**3.0/(self.OmegaL+Omegak*(1.0+z)**2.0+self.Omegam*(1.0+z)**3.0)
-        OmegaLz = self.OmegaL/(self.OmegaL+Omegak**(1.0+z)**2.0+self.Omegam*(1.0+z)**3.0)
+        OmegaLz = self.OmegaL/(self.OmegaL+Omegak*(1.0+z)**2.0+self.Omegam*(1.0+z)**3.0)
         D1_z = (1.0+z)**(-1.0)*5.0*Omegaz/2.0*(Omegaz**(4.0/7.0)-OmegaLz+(1.0+Omegaz/2.0)*(1.0+OmegaLz/70.0))**(-1.0)
         D1_0 = 5.0*self.Omegam/2.0*(self.Omegam**(4.0/7.0)-self.OmegaL+(1.0+self.Omegam/2.0)*(1.0+self.OmegaL/70.0))**(-1.0)
         return D1_z/D1_0
@@ -296,7 +296,7 @@ class powerspecNL:
     def D_nonnorm(self, z):
         Omegak = 1.0-self.Omegam-self.OmegaL
         Omegaz = self.Omegam*(1.0+z)**3.0/(self.OmegaL+Omegak*(1.0+z)**2.0+self.Omegam*(1.0+z)**3.0)
-        OmegaLz = self.OmegaL/(self.OmegaL+Omegak**(1.0+z)**2.0+self.Omegam*(1.0+z)**3.0)
+        OmegaLz = self.OmegaL/(self.OmegaL+Omegak*(1.0+z)**2.0+self.Omegam*(1.0+z)**3.0)
         D1_z = (1.0+z)**(-1.0)*5.0*Omegaz/2.0*(Omegaz**(4.0/7.0)-OmegaLz+(1.0+Omegaz/2.0)*(1.0+OmegaLz/70.0))**(-1.0)
         return D1_z
     
